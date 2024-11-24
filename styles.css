@@ -1,0 +1,78 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+h1, h2 {
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #00c853;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #00e676;
+}
+
+.response-section {
+  display: none;
+}
+
+.response-section.visible {
+  display: block;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.emoji, .avatar {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-15px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.hidden {
+  display: none;
+}
